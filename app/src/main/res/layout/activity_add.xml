@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_height="198dp">
+
+            <TextView
+                android:id="@+id/titlepage"
+                android:layout_marginTop="20dp"
+                android:textSize="26sp"
+                android:textColor="#FFF"
+                android:text="Thêm chi tiêu"
+                android:gravity="center"
+                android:layout_marginBottom="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="22dp"
+            android:paddingTop="22dp">
+
+            <LinearLayout
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/addtitle"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Tiêu đề"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/title"
+                    android:paddingLeft="12dp"
+                    android:textColorHint="#B5B5B5"
+                    android:textColor="@color/colorAccent"
+                    android:inputType="textCapSentences"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/black"
+                    android:layout_height="55dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/category"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Danh mục"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:id="@+id/category_spiner"
+                    android:paddingLeft="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/adddesc"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Tiền"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/describe"
+                    android:backgroundTint="@color/black"
+                    android:paddingLeft="12dp"
+                    android:inputType="number"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/adddate"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Thời gian"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/date_input"
+                    android:backgroundTint="@color/black"
+                    android:inputType="text"
+                    android:paddingLeft="12dp"
+                    android:textColorHint="#B5B5B5"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:enabled="false"
+                    android:layout_height="55dp" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnChosseDay"
+                    android:background="@color/colorAccent"
+                    android:text="Chọn ngày"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnSaveTask"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="THÊM"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="14dp"
+            android:text="HỦY"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/it_home"
+        android:title="Hôm nay"
+        android:icon="@drawable/ic_baseline_home_24"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/it_history"
+        android:title="Lịch sử"
+        android:icon="@drawable/ic_baseline_history_24"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/it_number"
+        android:title="Thống kê"
+        android:icon="@drawable/ic_baseline_broken_image_24"
+        app:showAsAction="never"
+        />
+</menu>
